@@ -14,6 +14,7 @@ export class IndexComponent implements OnInit, OnDestroy {
   date = new Date();
   pagination = 3;
   pagination1 = 1;
+  panelOpenState = false;
   constructor() {}
   scrollToDownload(element: any) {
     element.scrollIntoView({ behavior: "smooth" });
