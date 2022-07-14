@@ -26,3 +26,49 @@
   font-weight: bold;
 }
 
+.panel-heading{
+  padding-bottom: 15px !important;
+}
+
+.accordion-toggle[aria-expanded="true"]:before {
+  content: "\f107";
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+.accordion-toggle[aria-expanded="false"]:before {
+  content: '\f106';
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+.main-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 20px 0px 0px 20px;
+}
+
+.recent-posts-container{
+  margin-top: 30px;
+  margin-left: -50vw;
+}
+
+accordion-group {
+  ::ng-deep {
+    div {
+      &>div.panel-heading.card-header.panel-enabled {
+        background-color: rgba(52, 58, 64, 0.15); // change the background of every accordion heading
+        padding-bottom: 10px;
+
+        .btn-link {
+          color: rgb(255, 255, 255); // change the accordion heading buttons style
+        }
+      }
+
+      &>div.panel-collapse.collapse.in.show>div {
+        background-color: hsla(210, 10%, 83%, 0.10); // change the expanded content style
+      }
+    }
+  }
+}
+

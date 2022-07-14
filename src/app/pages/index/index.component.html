@@ -85,64 +85,85 @@
 
 
 
-    <div class="main row">
-      <div class="col-lg-6 col-md-6">
-        <div class="card card-coin card-plain">
-          <div class="card-header img-container">
-            <img class="img-center img-fluid rounded-circle" src="assets/img/mitchelle-osok.jpg" />
-
-            <h4 class="title">“Audentis Fortuna iuvat”</h4>
+    <div class="main-col">
+      <div class="main row">
+        <div class="col-lg-6 col-md-6">
+          <div class="card card-coin card-plain">
+            <div class="card-header img-container">
+              <img class="img-center img-fluid rounded-circle" src="assets/img/mitchelle-osok.jpg" />
+  
+              <h4 class="title">“Audentis Fortuna iuvat”</h4>
+            </div>
+            <div class="card-body">
+  
+            </div>
           </div>
-          <div class="card-body">
-
+  
+        </div>
+        <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+          <h1 class="profile-title text-left name">MITCHELLE AYORO OSOK</h1>
+  
+          <p class="profile-description">
+            All Aboard!
+            <br>
+            Basically, I am a nerd with a passion for writing - policy, academic and creative.
+            This space is for taping more into my creative and opinionated side though all three will forever be
+            intertwined in my life and work.
+            I have a big heart and a sharper brain that has so much to put out there in the universe so enjoy my portfolio
+            in entirety.
+            I hope my work leaves you thought provoked, emotionally charged and action driven to go out and be the best
+            you can be in this land of the living.
+          </p>
+          <div class="btn-wrapper profile pt-3">
+            <div>
+              <accordion>
+                <accordion-group (click)="toggleAccordion()" heading="Education and Certifications (Click to view)" [isOpen]="isContentOpen">
+                  <div>
+                    <li>
+                    Student of Politics, 
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp; New York University,(From 2021) 
+                    </li> 
+                    <br>
+                    <li>
+                      Master of Science in Foreign Service (International Development),<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;Certificate in African Studies,<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;Georgetown University (2016).<br>
+                    </li> 
+                    <br>
+                    <li>                    
+                    Bachelor of Economics,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;University of Nairobi (2012)
+                    </li>
+                    <br>
+                    <li>                    
+                    Certified Public Accountant of Kenya, CPA(K),<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Instituted of Chartered Public Accountants of Kenya (ICPAK) (2017).
+                    </li>
+                  </div>                
+                </accordion-group>
+             </accordion>
+            </div>
+      
+            <a class="btn btn-icon btn-twitter btn-round mr-1" href="https://twitter.com/creativetim" target="_blank">
+              <i class="fab fa-twitter"> </i>
+            </a>
+            <a class="btn btn-icon btn-facebook btn-round mr-1" href="https://www.facebook.com/creativetim"
+              target="_blank">
+              <i class="fab fa-facebook-square"> </i>
+            </a>
+            <a class="btn btn-icon btn-dribbble btn-round" href="https://dribbble.com/creativetim" target="_blank">
+              <i class="fab fa-dribbble"> </i>
+            </a>
           </div>
         </div>
-
       </div>
-      <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-        <h1 class="profile-title text-left name">MITCHELLE AYORO OSOK</h1>
 
-        <p class="profile-description">
-          All Aboard!
-          <br>
-          Basically, I am a nerd with a passion for writing - policy, academic and creative.
-          This space is for taping more into my creative and opinionated side though all three will forever be
-          intertwined in my life and work.
-          I have a big heart and a sharper brain that has so much to put out there in the universe so enjoy my portfolio
-          in entirety.
-          I hope my work leaves you thought provoked, emotionally charged and action driven to go out and be the best
-          you can be in this land of the living.
-        </p>
-        <div class="btn-wrapper profile pt-3">
-          <mat-accordion>
-          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                Self aware panel
-              </mat-panel-title>
-              <mat-panel-description>
-                Currently I am {{panelOpenState ? 'open' : 'closed'}}
-              </mat-panel-description>
-            </mat-expansion-panel-header>
-            <p>I'm visible because I am open</p>
-          </mat-expansion-panel>
-
-
-          </mat-accordion>
-
-          <a class="btn btn-icon btn-twitter btn-round mr-1" href="https://twitter.com/creativetim" target="_blank">
-            <i class="fab fa-twitter"> </i>
-          </a>
-          <a class="btn btn-icon btn-facebook btn-round mr-1" href="https://www.facebook.com/creativetim"
-            target="_blank">
-            <i class="fab fa-facebook-square"> </i>
-          </a>
-          <a class="btn btn-icon btn-dribbble btn-round" href="https://dribbble.com/creativetim" target="_blank">
-            <i class="fab fa-dribbble"> </i>
-          </a>
-        </div>
+      <div class="recent-posts-container">
+        Recent Posts
       </div>
+
     </div>
+    
 
 
 

@@ -16,6 +16,7 @@ import { CarouselModule } from "ngx-bootstrap/carousel";
 import { ModalModule } from "ngx-bootstrap/modal";
 import { JwBootstrapSwitchNg2Module } from "jw-bootstrap-switch-ng2";
 import { PopoverModule } from "ngx-bootstrap/popover";
+import { AccordionModule } from 'ngx-bootstrap/accordion';
 
 import {MatExpansionModule} from '@angular/material/expansion';
 
@@ -42,6 +43,7 @@ import { LandingpageComponent } from "./examples/landingpage/landingpage.compone
     BsDatepickerModule.forRoot(),
     CarouselModule.forRoot(),
     ModalModule.forRoot(),
+    AccordionModule.forRoot(),
     MatExpansionModule
   ],
   declarations: [
