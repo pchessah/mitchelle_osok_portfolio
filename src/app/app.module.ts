@@ -11,9 +11,10 @@ import { PagesModule } from "./pages/pages.module";
 
 import { MatExpansionModule } from "@angular/material/expansion";
 import {MatCardModule} from '@angular/material/card';
+import { NavbarComponent } from "./components/navbar/navbar.component";
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, NavbarComponent
   ],
   imports: [
     BrowserAnimationsModule,
