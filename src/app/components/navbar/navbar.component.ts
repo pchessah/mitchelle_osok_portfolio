@@ -30,6 +30,14 @@ export class NavbarComponent implements OnInit {
     this.isContentOpen = !this.isContentOpen;
   }
 
+  goToLinkedIn(){
+    window.open("https://www.linkedin.com/in/mitchelle-ayoro-osok/", "_blank");
+  }
+
+  goToInstagram(){
+    window.open("https://www.instagram.com/ayoro_osok/ ", "_blank");
+  }
+
   ngOnDestroy() {
     var body = document.getElementsByTagName("body")[0];
     body.classList.remove("index-page");
