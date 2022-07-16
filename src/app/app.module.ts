@@ -29,14 +29,17 @@ import { PopoverModule } from "ngx-bootstrap/popover";
 import { ProgressbarModule } from "ngx-bootstrap/progressbar";
 import { TabsModule } from "ngx-bootstrap/tabs";
 import { TooltipModule } from "ngx-bootstrap/tooltip";
+import 'hammerjs';
 
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { AboutMeComponent } from "./pages/about-me/about-me.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { ContactMeComponent } from "./components/contact-me/contact-me.component";
+import { BlogComponent } from "./pages/blog/blog.component";
+import { RecentPostsComponent } from "./components/recent-posts/recent-posts.component";
 @NgModule({
   declarations: [
-    AppComponent, NavbarComponent, AboutMeComponent, FooterComponent, ContactMeComponent
+    AppComponent, NavbarComponent, AboutMeComponent, FooterComponent, ContactMeComponent, BlogComponent, RecentPostsComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -64,8 +67,9 @@ import { ContactMeComponent } from "./components/contact-me/contact-me.component
     MatFormFieldModule,
     ReactiveFormsModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
   ],
+  exports: [RecentPostsComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

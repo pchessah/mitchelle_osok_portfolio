@@ -1,7 +1,7 @@
 <div class="wrapper">
   <div class="page-header header-filter">
     <div class="squares square1"></div>
-    <div class="squares square2"> Test</div>
+    <div class="squares square2"></div>
     <div class="squares square3"></div>
     <div class="squares square4"></div>
     <div class="squares square5"></div>
@@ -18,46 +18,79 @@
               <h1 class="profile-title text-center name">About Me</h1>
             </div>
             <div class="card-body">
-              <p>I am a policy specialist and a student of politics. Officially my job is to make policies that are
-                centered around human development. But really, my interest lies in the change that strategic policy can
-                impact on society, empowering people and improving their well being whether it is in government,
-                business operations or international development. Therefore, yes, I belong in all rooms but you will
-                find me in the room I believe I am most impactful. Wherever I am, my priority will always be the good of
-                the people. After 7 years working in a legislature, I transitioned to the corporate sector focusing on
-                building relationships with governments and other institutions to spearhead public policy programs that
-                promote public welfare and community engagement. Wherever I am, my priority will always be the good of
-                the people.</p>
-              <br><br>
-              <p>
-                Some say politics is in my blood but it doesn’t hurt to be in a classroom debating about political
-                affairs with open minded, extremely intelligent individuals and professors. The freedom to articulate my
-                thoughts and beliefs both verbally and on paper and be positively challenged on them excites me. I love
-                defending my ideas. In a way it’s made me fearless to stand for what I believe in but also humbled me
-                enough to admit there is always room for improvement. I have always found peace and belonging in the
-                classroom and it feels great to be back as a student and I intend to stay on as a professor in the
-                future. But at the end of the day aren’t we all perpetual students of life? We never stop learning.
-                Leadership and learning are indispensable to each other - JFK. I believe even in heaven we will be
-                learning at the feet of the Omniscient.
-              </p>
-              <br><br>
-              <p>
-                All in all, I am an Aquarius and my passions are a reflection of this. Like air, I lack a distinct form
-                and often resist classification. I believe I can do anything I set my mind and heart to. I embrace my
-                creativity and individuality and appreciate fun and innovative environments. I am a forward thinker, a
-                risk taker and my actions are always guided by my desire to make the world a better place. I thrive in
-                situations where I can be creative and inventive but can also assist, support and elevate others.
-                There’s enough cake for everyone so why not let others have their slice? And if it runs out we can
-                always bake another cake. I subscribe to the philosophy of compassionate leadership where leaders
-                embrace a culture of kindness and service promoting equity and inclusion. That’s the type of leader I
-                strive to be every single day. Your legacy lies in the lives you touched for better or for worse. If
-                it’s to be it’s up to me! William H. Johnsen.
 
-              </p>
-              <br><br>
+              <tabset>
+                <tab heading="Policy">
+                  <p>I am a policy specialist and a student of politics. Officially my job is to make policies that are
+                    centered around human development. But really, my interest lies in the change that strategic policy
+                    can
+                    impact on society, empowering people and improving their well being whether it is in government,
+                    business operations or international development. Therefore, yes, I belong in all rooms but you will
+                    find me in the room I believe I am most impactful. Wherever I am, my priority will always be the
+                    good of
+                    the people. After 7 years working in a legislature, I transitioned to the corporate sector focusing
+                    on
+                    building relationships with governments and other institutions to spearhead public policy programs
+                    that
+                    promote public welfare and community engagement. Wherever I am, my priority will always be the good
+                    of
+                    the people.</p>
+                  <br><br>
+                </tab>
 
-              <p>Finally, I don’t cook yet I have the appetite of a manual labourer. Remember to ask me how that is working out for me when and if we ever meet face to face.
+                <tab heading="Politics">
+                  <p>
+                    Some say politics is in my blood but it doesn’t hurt to be in a classroom debating about political
+                    affairs with open minded, extremely intelligent individuals and professors. The freedom to
+                    articulate my
+                    thoughts and beliefs both verbally and on paper and be positively challenged on them excites me. I
+                    love
+                    defending my ideas. In a way it’s made me fearless to stand for what I believe in but also humbled
+                    me
+                    enough to admit there is always room for improvement. I have always found peace and belonging in the
+                    classroom and it feels great to be back as a student and I intend to stay on as a professor in the
+                    future. But at the end of the day aren’t we all perpetual students of life? We never stop learning.
+                    Leadership and learning are indispensable to each other - JFK. I believe even in heaven we will be
+                    learning at the feet of the Omniscient.
+                  </p>
+                  <br><br>
+                  <p>
+                </tab>
 
-              </p>
+                <tab heading="Academia">
+                  <p>
+
+                    All in all, I am an Aquarius and my passions are a reflection of this. Like air, I lack a distinct
+                    form and often resist classification. I believe I can do anything I set my mind and heart to. I
+                    embrace my creativity and individuality and appreciate fun and innovative environments. I am a
+                    forward thinker, a risk taker and my actions are always guided by my desire to make the world a
+                    better place. I thrive in situations where I can be creative and inventive but can also assist,
+                    support and elevate others. There’s enough cake for everyone so why not let others have their slice?
+                    And if it runs out we can always bake another cake. I subscribe to the philosophy of compassionate
+                    leadership where leaders embrace a culture of kindness and service promoting equity and inclusion.
+                    That’s the type of leader I strive to be every single day. Your legacy lies in the lives you touched
+                    for better or for worse. If it’s to be it’s up to me! William H. Johnsen.
+
+                  </p>
+                  <br><br>
+                  <p>Finally, I don’t cook yet I have the appetite of a manual labourer. Remember to ask me how that is
+                    working out for me when and if we ever meet face to face.
+    
+                  </p>
+
+                </tab>
+                <!-- <tab *ngFor="let tabz of tabs"
+                   [heading]="tabz.title"
+                   [active]="tabz.active"
+                   (selectTab)="tabz.active = true"        
+                   [disabled]="tabz.disabled">
+                   {{tabz?.content}}
+                </tab> -->
+              </tabset>
+
+
+
+         
 
             </div>
           </div>

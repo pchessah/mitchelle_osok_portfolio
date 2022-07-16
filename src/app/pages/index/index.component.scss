@@ -48,9 +48,15 @@
   padding: 20px 0px 0px 20px;
 }
 
-.recent-posts-container{
-  margin-top: 30px;
-  margin-left: -50vw;
+
+
+p.profile-description{
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2;
+  color: white;
+  margin: 0px;
+
 }
 
 accordion-group {
@@ -70,5 +76,22 @@ accordion-group {
       }
     }
   }
+}
+.recent-posts-container > .card{
+  width: 90vw !important;
+  padding: 10px !important;
+  margin-left: -5vw;
+}
+
+.recent-post-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recent-post-link a{
+  color: white;
+ text-decoration: underline;
+ font-style: italic;
 }
 
