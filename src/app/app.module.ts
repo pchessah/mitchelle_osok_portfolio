@@ -28,9 +28,10 @@ import { ProgressbarModule } from "ngx-bootstrap/progressbar";
 import { TabsModule } from "ngx-bootstrap/tabs";
 import { TooltipModule } from "ngx-bootstrap/tooltip";
 import { FooterComponent } from "./components/footer/footer.component";
+import { ContactMeComponent } from "./components/contact-me/contact-me.component";
 @NgModule({
   declarations: [
-    AppComponent, NavbarComponent, AboutMeComponent, FooterComponent
+    AppComponent, NavbarComponent, AboutMeComponent, FooterComponent, ContactMeComponent
   ],
   imports: [
     BrowserAnimationsModule,
